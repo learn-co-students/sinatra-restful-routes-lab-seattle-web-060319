@@ -1,0 +1,6 @@
+<!-- index page lists all recipes in database-->
+
+<% @recipes.each do |recipe| %>
+    <a href="/recipes/<%= recipe.id %>"><h3><%= recipe.name %></h3></a>
+<% end %>
+
